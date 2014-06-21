@@ -1,0 +1,30 @@
+package com.AwesomeSauwss.SteamAge;
+
+import com.AwesomeSauwss.SteamAge.lib.References;
+
+
+@Mod(modid = References.MODID, name = References.NAME , version = References.VERSION)
+
+public class SteamAge {
+	
+	@SidedProxy(clientSide = References.Client, serverSide = References.Common)
+	
+	public static ProxyCommon proxy;
+	
+	@EventHandler
+	public void init(FMLInitializationEvent event){
+		
+	}
+	
+	@EventHandler
+	public void load(FMLInitializationEvent event){
+		
+		proxy.registerRenderInformation();
+	}
+	
+	public void SteamAge() {
+		
+	}
+}
+
+

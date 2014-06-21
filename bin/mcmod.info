@@ -1,0 +1,18 @@
+[
+{
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "A add-on mod for TerraFirmaCraft, 
+                    its goal is to establish a system which will 
+                    further a TFC game's progress.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["AwesomeSauwss"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

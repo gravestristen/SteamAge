@@ -1,0 +1,11 @@
+package com.AwesomeSauwss.SteamAge;
+
+import com.AwesomeSauwss.SteamAge.lib.ProxyCommon;
+
+public class ProxyClient extends ProxyCommon{
+	
+	public void registerrenderInformation(){
+		
+	}
+	
+}

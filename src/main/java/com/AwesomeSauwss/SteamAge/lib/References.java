@@ -1,0 +1,10 @@
+package com.AwesomeSauwss.SteamAge.lib;
+
+public class References {
+
+	public static final String MODID = "SteamAge";
+	public static final String VERSION = "0.01.1 Alpha";
+	public static final String NAME = "TFC Add-on Steam Age";
+	public static final String Client = "com.AwesomeSauwss.SteamAge.lib.ProxyClient";
+	public static final String Common = "com.AwesomeSauwss.SteamAge.lib.ProxyCommon";
+}

@@ -1,0 +1,7 @@
+package com.AwesomeSauwss.SteamAge.items;
+
+import net.minecraft.item.Item;
+
+public class CopperPipe extends Item{
+
+}

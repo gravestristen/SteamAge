@@ -1,0 +1,15 @@
+package com.AwesomeSauwss.SteamAge;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "SteamAge", name= "TFC Add-on Steam Age", version= "0.01.1 Alpha")
+
+public class SteamAge {
+	
+	public SteamAge() {
+	
+		
+		
+	}
+
+}

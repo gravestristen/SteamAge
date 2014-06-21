@@ -1,0 +1,9 @@
+package com.AwesomeSauwss.SteamAge;
+
+public class ProxyReferences {
+
+	public static final String MODID = "SteamAge";
+	public static final String VERSION = "SteamAge";
+	public static final String Client = "SteamAge";
+	public static final String Common = "SteamAge";
+}

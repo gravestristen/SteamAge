@@ -1,0 +1,48 @@
+package com.AwesomeSauwss.SteamAge;
+
+import com.AwesomeSauwss.SteamAge.lib.ProxyCommon;
+import com.AwesomeSauwss.SteamAge.lib.References;
+import com.AwesomeSauwss.SteamAge.items.*;
+
+import net.minecraft.item.Item;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+
+@Mod(modid = References.MODID, name = References.NAME , version = References.VERSION)
+
+public class SteamAge {
+	
+	@SidedProxy(clientSide = References.Client, serverSide = References.Common)
+	
+	public static ProxyCommon proxy;
+	
+	//Items
+		public static Item CopperPipe = new CopperPipe(4000);
+				
+	@EventHandler
+	public void init(FMLInitializationEvent event){
+		
+	}
+	
+	@EventHandler
+	public void load(FMLInitializationEvent event){
+		
+		proxy.registerRenderInformation();
+	}
+	
+	public SteamAge() {
+		//Item registry
+			//GameReg
+				GameRegistry.registerItem(CopperPipe, "Cpipe");
+			//LangReg
+				LanguageRegistry.addName(CopperPipe, "Cpipe");
+	}
+}
+
+

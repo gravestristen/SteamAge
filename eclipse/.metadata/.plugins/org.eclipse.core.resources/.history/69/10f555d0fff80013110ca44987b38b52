@@ -1,0 +1,39 @@
+package com.AwesomeSauwss.SteamAge;
+
+import com.AwesomeSauwss.SteamAge.lib.ProxyCommon;
+import com.AwesomeSauwss.SteamAge.lib.References;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+
+
+@Mod(modid = References.MODID, name = References.NAME , version = References.VERSION)
+
+public class SteamAge {
+	
+	@SidedProxy(clientSide = References.Client, serverSide = References.Common)
+	
+	public static ProxyCommon proxy;
+	
+	//Items
+		public finalstatic Item CopperPipe = new CopperPipe(4000);
+				
+	@EventHandler
+	public void init(FMLInitializationEvent event){
+		
+	}
+	
+	@EventHandler
+	public void load(FMLInitializationEvent event){
+		
+		proxy.registerRenderInformation();
+	}
+	
+	public SteamAge() {
+		
+	}
+}
+
+
