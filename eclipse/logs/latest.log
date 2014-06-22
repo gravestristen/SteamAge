@@ -1,7 +1,7 @@
-[17:47:48] [main/INFO]: Setting user: Player531
-[17:47:48] [Client thread/INFO]: LWJGL Version: 2.9.0
-[17:47:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TFC Add-on Steam Age
-[17:47:50] [Client thread/ERROR]: Using missing texture, unable to load steamage:textures/blocks/CopperPipe.png
+[22:30:58] [main/INFO]: Setting user: Player203
+[22:30:59] [Client thread/INFO]: LWJGL Version: 2.9.0
+[22:31:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TFC Add-on Steam Age
+[22:31:02] [Client thread/ERROR]: Using missing texture, unable to load steamage:textures/blocks/CopperPipe.png
 java.io.FileNotFoundException: steamage:textures/blocks/CopperPipe.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -19,8 +19,8 @@ java.io.FileNotFoundException: steamage:textures/blocks/CopperPipe.png
 	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-[17:47:51] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[17:47:51] [Client thread/ERROR]: Using missing texture, unable to load steamage:textures/items/OStick.png
+[22:31:02] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[22:31:02] [Client thread/ERROR]: Using missing texture, unable to load steamage:textures/items/OStick.png
 java.io.FileNotFoundException: steamage:textures/items/OStick.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -38,10 +38,10 @@ java.io.FileNotFoundException: steamage:textures/items/OStick.png
 	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-[17:47:51] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[17:47:51] [Sound Library Loader/INFO]: Sound engine started
-[17:47:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TFC Add-on Steam Age
-[17:47:51] [Client thread/ERROR]: Using missing texture, unable to load steamage:textures/items/OStick.png
+[22:31:02] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[22:31:02] [Sound Library Loader/INFO]: Sound engine started
+[22:31:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TFC Add-on Steam Age
+[22:31:02] [Client thread/ERROR]: Using missing texture, unable to load steamage:textures/items/OStick.png
 java.io.FileNotFoundException: steamage:textures/items/OStick.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -62,8 +62,8 @@ java.io.FileNotFoundException: steamage:textures/items/OStick.png
 	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-[17:47:51] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[17:47:51] [Client thread/ERROR]: Using missing texture, unable to load steamage:textures/blocks/CopperPipe.png
+[22:31:02] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[22:31:02] [Client thread/ERROR]: Using missing texture, unable to load steamage:textures/blocks/CopperPipe.png
 java.io.FileNotFoundException: steamage:textures/blocks/CopperPipe.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -84,24 +84,7 @@ java.io.FileNotFoundException: steamage:textures/blocks/CopperPipe.png
 	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_60]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-[17:47:51] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[17:47:52] [Sound Library Loader/INFO]: Sound engine started
-[17:47:52] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[17:47:53] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[17:47:53] [Server thread/INFO]: Generating keypair
-[17:48:00] [Server thread/INFO]: Preparing start region for level 0
-[17:48:01] [Server thread/INFO]: Player531[local:E:d0da87f4] logged in with entity id 82 at (1088.724164902271, 56.0, -234.92433168320773)
-[17:48:01] [Server thread/INFO]: Player531 joined the game
-[17:48:06] [Server thread/INFO]: Player531 has just earned the achievement [Taking Inventory]
-[17:48:06] [Client thread/INFO]: [CHAT] Player531 has just earned the achievement [Taking Inventory]
-[17:48:29] [Server thread/INFO]: Saving and pausing game...
-[17:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
-[17:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
-[17:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
-[17:48:29] [Server thread/INFO]: Stopping server
-[17:48:29] [Server thread/INFO]: Saving players
-[17:48:29] [Server thread/INFO]: Saving worlds
-[17:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
-[17:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
-[17:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
-[17:48:30] [Client thread/INFO]: Stopping!
+[22:31:02] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[22:31:03] [Sound Library Loader/INFO]: Sound engine started
+[22:31:03] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[22:31:11] [Client thread/INFO]: Stopping!

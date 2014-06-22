@@ -234,3 +234,11 @@ org.eclipse.core.internal.resources.ResourceException: A resource exists with a 
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
 !SUBENTRY 2 org.eclipse.core.resources 4 275 2014-06-21 15:11:11.836
 !MESSAGE A resource exists with a different case: '/Minecraft/src/main/resources/assests/SteamAge'.
+
+!ENTRY org.eclipse.core.net 4 0 2014-06-21 21:22:16.197
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The URL does not use a recognized protocol
+' #12006.
+
+!ENTRY org.eclipse.core.net 4 0 2014-06-21 22:26:17.598
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The URL does not use a recognized protocol
+' #12006.

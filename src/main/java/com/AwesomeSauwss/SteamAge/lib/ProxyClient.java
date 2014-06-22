@@ -5,4 +5,8 @@ public class ProxyClient extends ProxyCommon{
 	public void registerRenderInformation(){
 		
 	}
+	
+	public void registerSoundInformation(){
+		
+	}
 }

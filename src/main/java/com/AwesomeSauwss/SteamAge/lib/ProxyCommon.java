@@ -4,6 +4,10 @@ public class ProxyCommon {
 
 	public void registerRenderInformation(){
 		
-	}	
+	}
+
+	public void registerSoundInformation(){
+		
+	}
 	
 }

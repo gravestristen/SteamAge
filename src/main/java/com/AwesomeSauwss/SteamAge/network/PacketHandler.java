@@ -7,6 +7,8 @@ import net.minecraft.util.IChatComponent;
 
 public class PacketHandler implements INetHandler {
 
+
+	
 	@Override
 	public void onDisconnect(IChatComponent var1) {
 		
@@ -14,8 +16,7 @@ public class PacketHandler implements INetHandler {
 	}
 
 	@Override
-	public void onConnectionStateTransition(EnumConnectionState var1,
-			EnumConnectionState var2) {
+	public void onConnectionStateTransition(EnumConnectionState var1, EnumConnectionState var2) {
 		
 		
 	}

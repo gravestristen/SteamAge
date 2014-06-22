@@ -1,0 +1,24 @@
+package com.AwesomeSauwss.SteamAge.lib;
+
+import java.io.File;
+
+import net.minecraftforge.common.config.Configuration;
+
+private static final String CATEGORY_BLOCKS = "Blocks";
+
+public class ConfigHandler {
+
+	public static void init(File file){
+		Configuration config = new Configuration(file);
+		config.load();
+		
+		
+		
+		String Version = config.get("ModVersion", "", References.NAME).getString();
+		//Blocks
+			int CopperPipeID = config.get(CATEGORY_BLOCKS, "Copper Pipe", 4001).getInt();
+			
+			
+		config.save();
+	}
+}

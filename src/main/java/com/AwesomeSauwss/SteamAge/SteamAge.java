@@ -8,15 +8,17 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import com.AwesomeSauwss.SteamAge.blocks.*;
-import com.AwesomeSauwss.SteamAge.items.*;
+import com.AwesomeSauwss.SteamAge.blocks.BlockCopperPipe;
+import com.AwesomeSauwss.SteamAge.items.ObsidianStick;
 import com.AwesomeSauwss.SteamAge.lib.*;
-
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -25,11 +27,13 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class SteamAge {
 	
+	@Instance(References.MODID)
+	public static SteamAge instance;
 	@SidedProxy(clientSide = References.Client, serverSide = References.Common)
 	public static ProxyCommon proxy;
 	
 	//CreativeTabs
-		public static CreativeTabs SteamAge = new CreativeTabs("AwesomeSauwss SteamAge Addon"){
+		public static CreativeTabs SteamAge = new CreativeTabs("SteamAge"){
 			@Override
 			public Item getTabIconItem() {
 				return ObsidianStick;
@@ -38,31 +42,47 @@ public class SteamAge {
 			}
 		};
 	
+		
+	//InitializationLoad	
+	@EventHandler
+	public void preinit(FMLPreInitializationEvent event){	
+		
+		ConfigHandler.init(event.getSuggestedConfigurationFile());
+		proxy.registerRenderInformation(); 
+		proxy.registerSoundInformation();
+		
+		
+		
+	}
+	
+	
 	//Items
 		public static Item ObsidianStick = new ObsidianStick(4002);
 	//Blocks
-		public static Block Steam = new BlockSteam(4001, Material.iron);
-		public static Block CopperPipe = new BlockCopperPipe(4003, Material.rock);
-		
-	@EventHandler
-	public void init(FMLInitializationEvent event){	
-		
-	//Recipes
-		//Crafting
-			//Shapeless
-				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.farmland, 1), Blocks.dirt, Items.stone_hoe);
-			//Shaped
-				GameRegistry.addShapedRecipe(new ItemStack(Blocks.command_block), "X X", " Y ", "X X", 'X', Blocks.noteblock, 'Y', Items.redstone);
-		//Smelting
-				GameRegistry.addSmelting(Blocks.coal_block, new ItemStack(Blocks.water), 20f);
-				GameRegistry.addSmelting(Items.iron_axe, new ItemStack(Items.diamond_axe), 600f);
-	//Creativetabs
-		LanguageRegistry.instance().addStringLocalization("itemGroup.tabSteamAge", "en_US", "AwesomeSauwss SteamAge Addon");
-	}
+		public static Block CopperPipe = new BlockCopperPipe(ConfigHandler.COPPER_PIPE_ID, Material.rock);
 	
+	//DuringLoad
 	@EventHandler
 	public void load(FMLInitializationEvent event){		
 		proxy.registerRenderInformation();
+		
+		//Recipes
+				//Crafting
+					//Shapeless
+						GameRegistry.addShapelessRecipe(new ItemStack(Blocks.farmland, 1), Blocks.dirt, Items.stone_hoe);
+					//Shaped
+						GameRegistry.addShapedRecipe(new ItemStack(Blocks.command_block), "X X", " Y ", "X X", 'X', Blocks.noteblock, 'Y', Items.redstone);
+				//Smelting
+						GameRegistry.addSmelting(Blocks.coal_block, new ItemStack(Blocks.water), 20f);
+						GameRegistry.addSmelting(Items.iron_axe, new ItemStack(Items.diamond_axe), 600f);
+		//Creativetabs
+			LanguageRegistry.instance().addStringLocalization("itemGroup.tabSteamAge", "en_US", "SteamAge");
+		
+	}
+	
+	//Post Load
+	@EventHandler
+	public void modsLoaded(FMLPostInitializationEvent event){
 		
 	}
 	
@@ -75,10 +95,8 @@ public class SteamAge {
 				
 		//Block registry
 			//GameReg
-				GameRegistry.registerBlock(Steam, "Steam");
 				GameRegistry.registerBlock(CopperPipe, "Cpipe");
 			//LangReg
-				LanguageRegistry.addName(Steam, "Steam");
 				LanguageRegistry.addName(CopperPipe, "Copper Pipe");
 	}
 }
