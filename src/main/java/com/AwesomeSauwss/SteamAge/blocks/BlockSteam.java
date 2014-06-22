@@ -11,11 +11,10 @@ public class BlockSteam extends Block{
 		this.setBlockName("Steam");
 		this.setBlockTextureName("steamage:blocksteam");
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setStepSound(soundTypeGlass);
+		this.setStepSound(Block.soundTypeMetal);
 		this.setHardness(6f);
 		this.setResistance(10f);
 		this.setLightLevel(0.8f);
-		this.setBlockName("Steam");
 	}
 
 }

@@ -32,18 +32,18 @@ public class SteamAge {
 		public static CreativeTabs SteamAge = new CreativeTabs("AwesomeSauwss SteamAge Addon"){
 			@Override
 			public Item getTabIconItem() {
-				return CopperPipe;
+				return ObsidianStick;
 				
 				
 			}
 		};
 	
 	//Items
-		public static Item CopperPipe = new CopperPipe(4000);
-		
+		public static Item ObsidianStick = new ObsidianStick(4002);
 	//Blocks
-		public static Block Steam = new BlockSteam(4001, Material.rock);
-				
+		public static Block Steam = new BlockSteam(4001, Material.iron);
+		public static Block CopperPipe = new BlockCopperPipe(4003, Material.rock);
+		
 	@EventHandler
 	public void init(FMLInitializationEvent event){	
 		
@@ -69,15 +69,17 @@ public class SteamAge {
 	public SteamAge() {
 		//Item registry
 			//GameReg
-				GameRegistry.registerItem(CopperPipe, "Cpipe");
+				GameRegistry.registerItem(ObsidianStick, "Ostick");
 			//LangReg
-				LanguageRegistry.addName(CopperPipe, "Cpipe");
+				LanguageRegistry.addName(ObsidianStick, "Ostick");
 				
 		//Block registry
 			//GameReg
 				GameRegistry.registerBlock(Steam, "Steam");
+				GameRegistry.registerBlock(CopperPipe, "Cpipe");
 			//LangReg
 				LanguageRegistry.addName(Steam, "Steam");
+				LanguageRegistry.addName(CopperPipe, "Copper Pipe");
 	}
 }
 
