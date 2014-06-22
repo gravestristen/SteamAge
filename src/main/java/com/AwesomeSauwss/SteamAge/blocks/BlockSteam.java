@@ -6,8 +6,10 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockSteam extends Block{
 	
-	public BlockSteam(int i, Material water) {
-		super (water);
+	public BlockSteam(int i, Material rock) {
+		super (rock);
+		this.setBlockName("Steam");
+		this.setBlockTextureName("steamage:blocksteam");
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		this.setStepSound(soundTypeGlass);
 		this.setHardness(6f);

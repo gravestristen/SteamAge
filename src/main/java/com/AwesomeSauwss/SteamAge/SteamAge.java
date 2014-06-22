@@ -8,10 +8,10 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import com.AwesomeSauwss.SteamAge.blocks.BlockSteam;
-import com.AwesomeSauwss.SteamAge.items.CopperPipe;
-import com.AwesomeSauwss.SteamAge.lib.ProxyCommon;
-import com.AwesomeSauwss.SteamAge.lib.References;
+import com.AwesomeSauwss.SteamAge.blocks.*;
+import com.AwesomeSauwss.SteamAge.items.*;
+import com.AwesomeSauwss.SteamAge.lib.*;
+
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -42,7 +42,7 @@ public class SteamAge {
 		public static Item CopperPipe = new CopperPipe(4000);
 		
 	//Blocks
-		public static final Block Steam = new  BlockSteam(4001, Material.water);
+		public static Block Steam = new BlockSteam(4001, Material.rock);
 				
 	@EventHandler
 	public void init(FMLInitializationEvent event){	

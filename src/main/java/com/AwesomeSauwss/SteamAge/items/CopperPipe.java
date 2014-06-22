@@ -7,7 +7,7 @@ public class CopperPipe extends Item{
 
 	public CopperPipe(int i){
 		this.setUnlocalizedName("CPipe");
-		this.setTextureName("SteamAge:Cpipe");
+		this.setTextureName("steamage:cpipe");
 		this.setCreativeTab(CreativeTabs.tabMisc);
 		
 	}
